@@ -1,0 +1,61 @@
+.container {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav {
+    color: var(--text-color-light);
+    ul {
+        display: flex;
+    }
+    ul li {
+        display: flex;
+        position: relative;
+        padding-right: 20px;
+        .scrollingArrowDown {
+            font-size: 18px;
+            position: absolute;
+            right: 10px;
+            top: 7px;
+        }
+        .scrollingArrowUp {
+            font-size: 18px;
+            position: absolute;
+            right: 10px;
+            top: 17px;
+        }
+    }
+}
+
+.scrollingMenu {
+    cursor: pointer;
+}
+
+.menu {
+    padding: 10px;
+    border-radius: 5px;
+    width: 190px;
+    background-color: gray;
+    position: absolute;
+    top: 60px;
+    ul {
+        display: flex;
+        flex-direction: column;
+        li {
+            padding-right: 0;
+            padding: 5px;
+        }
+    }
+}
+
+.link {
+    color: var(--text-color-light);
+}
+
+
