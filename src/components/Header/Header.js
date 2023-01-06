@@ -33,44 +33,46 @@ function Header() {
           </li>
           <li className={styles.scrollingMenu} onClick={handleShowMenuClub}>
             <span className={`${styles.link} p-10`}>Club</span>
-            {showMenuClub ? (
+            {showMenuClub && !showMenuSaison ? (
               <i className={`fa-solid fa-sort-up ${styles.scrollingArrowUp}`}></i>
               ) : (
-                <i className={`fa-solid fa-sort-down ${styles.scrollingArrowDown}`}></i>
+              <i className={`fa-solid fa-sort-down ${styles.scrollingArrowDown}`}></i>
               )
             }
-            {showMenuClub && !showMenuSaison && (
+            {showMenuClub && !showMenuSaison &&
               <div className={styles.menu}>
               <ul>
-                <li>Comité</li>
-                <li>Licences</li>
-                <li>Partenaires</li>
-                <li>Horaires</li>
-                <li>Concours sociétaire</li>
+                <Link className={styles.link} to='/Club/Comite'>Comité</Link>
+                <Link className={styles.link} to='/Club/Licences'>Licences</Link>
+                <Link className={styles.link} to='/Club/Partenaires'>Partenaires</Link>
+                <Link className={styles.link} to='/Club/Horaires'>Horaires</Link>
+                <Link className={styles.link} to='/Club/Concours-societaire'>Concours sociétaire</Link>
               </ul>
             </div>
-            )}
+            }
           </li>
           <li className={styles.scrollingMenu} onClick={handleShowMenuSaison}>
-            <span className={`${styles.link} p-10`}>Saison</span>
-            {showMenuSaison ? (
-              <i className={`fa-solid fa-sort-up ${styles.scrollingArrowUp}`}></i>
-              ) : (
+              <span className={`${styles.link} p-10`}>Saison</span>
+              {showMenuSaison && !showMenuClub ? (
+                <i className={`fa-solid fa-sort-up ${styles.scrollingArrowUp}`}></i>
+                ) : (
                 <i className={`fa-solid fa-sort-down ${styles.scrollingArrowDown}`}></i>
-              )
-            }
-            {showMenuSaison && !showMenuClub && (
-              <div className={styles.menu}>
-              <ul>
-                <li>Coupe de france</li>
-                <li>Championnats</li>
-                <li>Concours Hivernaux</li>
-                <li>Concours Nationaux</li>
-                <li>Autres concours</li>
-              </ul>
-            </div>
-            )}
-            
+                )
+              }
+              {showMenuSaison && !showMenuClub &&
+                <>
+                  <div className={styles.calc} onClick={() => setShowMenuSaison(true)}></div>
+                  <div className={styles.menu}>
+                    <ul>
+                      <Link className={styles.link} to='/Saison/Coupe-de-france'>Coupe de france</Link>
+                      <Link className={styles.link} to='/Saison/Championnats'>Championnats</Link>
+                      <Link className={styles.link} to='/Saison/Concours-Hivernaux'>Concours Hivernaux</Link>
+                      <Link className={styles.link} to='/Saison/Concours-Nationaux'>Concours Nationaux</Link>
+                      <Link className={styles.link} to='/Saison/autres-Concours'>Autres concours</Link>
+                    </ul>
+                  </div>
+                </>
+              }
           </li>
           <li>
             <Link className={`${styles.link} p-10`}to="/Photos">Photothèque</Link>
