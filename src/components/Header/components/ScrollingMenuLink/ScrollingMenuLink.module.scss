@@ -1,0 +1,97 @@
+.scrollingMenu {
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        .link {
+            color: #250902;
+        }
+        color: #250902;
+    }
+    .arrowContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .scrollingArrowDown{
+        margin-left: 10px;
+        padding-bottom: 5px;
+    }
+    .scrollingArrowUp{
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+}
+
+.calc {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    // background-color: gray;
+    // opacity: 0.4;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    cursor: default;
+}
+
+.clubMenuContainer {
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    position: absolute;
+    top: 67px;
+    left: -58px;
+    height: auto;
+}
+
+.clubMenu {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--primary-color);
+    transform: translateY(-171px);
+    position: relative;
+    opacity: 0;
+    ul {
+        display: flex;
+        flex-direction: column;
+        li {
+            padding-right: 0;
+            padding: 5px;
+        }
+        .link {
+            padding: 5px;
+        }
+    }
+}
+
+.clubMenuActive {
+    animation: clubMenuDown 1s forwards;
+}
+
+@keyframes clubMenuDown {
+    0% {
+        opacity: 1;
+        transform: translateY(-171px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.arrowUp {
+    color: var(--primary-color);
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: 85px;
+    z-index: 2;
+    font-size: 20px;
+    opacity: 1;
+}

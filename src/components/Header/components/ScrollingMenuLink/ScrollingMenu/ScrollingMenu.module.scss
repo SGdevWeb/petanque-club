@@ -1,0 +1,73 @@
+.calc {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    // background-color: gray;
+    // opacity: 0.4;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    cursor: default;
+}
+
+.menuContainer {
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    position: absolute;
+    top: 67px;
+    left: -58px;
+    height: auto;
+}
+
+.menu {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--primary-color);
+    transform: translateY(-171px);
+    position: relative;
+    opacity: 0;
+    ul {
+        display: flex;
+        flex-direction: column;
+        li {
+            padding-right: 0;
+            padding: 5px;
+        }
+        .link {
+            padding: 5px;
+        }
+    }
+}
+
+.menuActive {
+    animation: menuDown 1s forwards;
+}
+
+@keyframes menuDown {
+    0% {
+        opacity: 1;
+        transform: translateY(-171px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.arrowUp {
+    color: var(--primary-color);
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: 85px;
+    z-index: 2;
+    font-size: 20px;
+    opacity: 1;
+}

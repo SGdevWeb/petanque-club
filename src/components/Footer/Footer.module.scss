@@ -1,0 +1,27 @@
+.container {
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    max-width: 1400px;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location {
+    padding: 10px;
+    text-align: center;
+}
+
+.author {
+    padding: 10px;
+    a {
+        margin-left: 5px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

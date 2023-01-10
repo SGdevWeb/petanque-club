@@ -40,7 +40,7 @@ export const router = createBrowserRouter([
       element: <Club />,
       children: [
         {
-          path: '/Club/Comite',
+          path: '/Club/Comité',
           element: <Comite />
         },
         {
@@ -56,7 +56,7 @@ export const router = createBrowserRouter([
           element: <Horaires />
         },
         {
-          path: '/Club/Concours-societaire',
+          path: '/Club/Concours-sociétaire',
           element: <ConcoursSocietaire />
         },
       ]

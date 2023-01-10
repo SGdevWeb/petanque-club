@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Equipes.module.scss'
 
 function Equipes() {
   return (
-    <div>Equipes</div>
+    <div className={styles.container}>Equipes</div>
   )
 }
 
