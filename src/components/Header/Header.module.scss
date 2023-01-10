@@ -5,8 +5,20 @@
 }
 
 .logo {
-    font-size: 24px;
-    margin-left: 10px;
+    font-size: 22px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    .link div {
+        &:first-child {
+            text-transform: uppercase;
+        }
+        &:last-child {
+            font-size: 20px;
+            padding-left: 1px;
+        }
+    }
+    
 }
 
 .nav {
@@ -16,25 +28,12 @@
         display: flex;
     }
     ul li {
-        cursor: pointer;
         display: flex;
         position: relative;
         padding: 15px;
         &:hover {
             .link {
                 color: #250902;
-            }
-            .clubMenu .link {
-                color: white;
-                &:hover {
-                    color: #250902;
-                }
-            }
-            .saisonMenu .link {
-                color: white;
-                &:hover {
-                    color: #250902;
-                }
             }
         }
     }

@@ -9,12 +9,22 @@ function ScrollingMenuLink({title, menu}) {
   function handleShowMenu() {
     setShowMenu(!showMenu)
   }
+  
+  function titleMenuStyle() {
+    if (showMenu) {
+      return { color : '#250902' }
+    } else {
+      return {}
+    }
+  }
 
   return (
     <>
       <div onClick={handleShowMenu}>
         <div className={styles.scrollingMenu}>
-          <div className={`${styles.link} p-10 d-flex align-items justify-content`}> 
+          <div  className={`${styles.link} p-10 d-flex align-items justify-content`} 
+                style={titleMenuStyle()}
+          > 
             <span>{title}</span>
             <div className={styles.arrowContainer}>
               {showMenu ? (

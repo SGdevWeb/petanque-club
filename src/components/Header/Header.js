@@ -12,7 +12,10 @@ function Header() {
   return (
     <div className={styles.container}>
       <div className={`${styles.logo} flex-fill`}>
-        <Link className={`${styles.link} p-10`} to="/">PETANQUE Saint Saulvienne</Link>
+        <Link className={`${styles.link}`} to="/">
+          <div>p é t a n q u e</div>
+          <div> Saint Saulvienne </div>
+        </Link>
       </div>
       <nav className={styles.nav}>
         <ul>
