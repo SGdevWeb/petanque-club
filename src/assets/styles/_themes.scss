@@ -9,9 +9,9 @@
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+    border: 2px solid var(--primary-color) !important;
 }
 
 .btn-reverse-primary {
