@@ -19,14 +19,15 @@ p {
 
 ul {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0px !important;
     margin: 0;
     text-decoration: none;
+    margin-bottom: 0 !important;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+a, Link {
+    text-decoration: none !important;
+    color: white !important;
 }
 
 img {

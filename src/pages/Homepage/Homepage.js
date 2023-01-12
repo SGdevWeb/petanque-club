@@ -1,4 +1,4 @@
-import Carousel from '../../components/Carousel/Carousel'
+import Slideshow from '../../components/Slideshow/Slideshow'
 import styles from './Homepage.module.scss'
 import LastNews from './LastNews.js/LastNews'
 
@@ -8,7 +8,9 @@ function Homepage() {
 
   return (
     <div className={styles.container}>
-      <Carousel />
+      <Slideshow 
+        numberLastNews={numberLastNews}
+      />
       <LastNews 
         numberLastNews={numberLastNews}
       />

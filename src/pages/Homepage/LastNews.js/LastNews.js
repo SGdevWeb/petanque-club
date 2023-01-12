@@ -9,6 +9,7 @@ function LastNews({numberLastNews}) {
 
   return (
     <div className={styles.container}>
+      <h2 className={styles.title}>Dernières actus</h2>
       {lastNews.map(el => (
         <News
           key={el.id} 

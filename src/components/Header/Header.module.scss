@@ -2,6 +2,7 @@
     background-color: var(--primary-color);
     display: flex;
     align-items: center;
+    padding: 15px;
 }
 
 .logo {
@@ -23,14 +24,20 @@
 
 .nav {
     color: var(--text-color-light);
-    margin-right: 20px;
+    margin-right: 10px;
     ul {
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
     ul li {
         display: flex;
         position: relative;
-        padding: 15px;
+        padding: 0 15px;
+        border-right: 1px solid white;
+        &:last-child {
+            border: 0;
+        }
         &:hover {
             .link {
                 color: #250902;
