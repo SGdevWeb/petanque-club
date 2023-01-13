@@ -20,20 +20,18 @@ function ScrollingMenuLink({title, menu}) {
 
   return (
     <>
-      <div onClick={handleShowMenu}>
-        <div className={styles.scrollingMenu}>
-          <div  className={`${styles.link} p-10 d-flex align-items justify-content`} 
-                style={titleMenuStyle()}
-          > 
-            <span>{title}</span>
-            <div className={styles.arrowContainer}>
-              {showMenu ? (
-              <i className={`fa-solid fa-sort-up ${styles.scrollingArrowUp}`}></i>
-              ) : (
-              <i className={`fa-solid fa-sort-down ${styles.scrollingArrowDown}`}></i>
-              )
-              }
-            </div>
+      <div onClick={handleShowMenu} className={styles.scrollingMenuLink}>
+        <div  className={`${styles.link} d-flex align-items justify-content`} 
+              style={titleMenuStyle()}
+        > 
+          <span>{title}</span>
+          <div className={styles.arrowContainer}>
+            {showMenu ? (
+            <i className={`fa-solid fa-sort-up ${styles.scrollingArrowUp}`}></i>
+            ) : (
+            <i className={`fa-solid fa-sort-down ${styles.scrollingArrowDown}`}></i>
+            )
+            }
           </div>
         </div>
       </div>

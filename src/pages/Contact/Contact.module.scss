@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
-    @include mixin.breakpoint-tablette {
+    @include mixin.breakpoint-tabletteS {
         padding: 20px;
     }
 }
@@ -23,7 +23,7 @@
     width: 60%;
     margin: auto;
     margin-bottom: 30px;
-    @include mixin.breakpoint-laptop {
+    @include mixin.breakpoint-laptopS {
         width: 80%;
     }
     @include mixin.breakpoint-mobileL {
@@ -53,8 +53,6 @@
         resize: none;
     }
 }
-
-
 
 .error {
     font-size: 14px;

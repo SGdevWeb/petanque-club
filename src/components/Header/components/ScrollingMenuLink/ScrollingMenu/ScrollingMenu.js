@@ -4,24 +4,17 @@ import styles from './ScrollingMenu.module.scss'
 
 function ScrollingMenu({ showMenu, setShowMenu, menu, title }) {
 
-  const style = () => {
-    if (title === 'Club') {
-      return { left : '-50px'}
-    } else {
-      return { left : '-45px'}
-    }
-  }
-
     return (
         <>
           <div className={styles.calc} onClick={() => setShowMenu(false)}></div>
-          <div className={styles.menuContainer} style={style()}>
-            <div className={showMenu ? `${styles.menu} ${styles.menuActive}` : `${styles.clubMenu}`}>
+          <div className={styles.menuContainer}>
+            <div className={showMenu ? `${styles.menu} ${styles.menuActive}` : `${styles.menu}`}>
               <i className={`fa-solid fa-sort-up ${styles.arrowUp}`}></i>
               <ul>
                 <Menu
                   menu={menu}
                   title={title}
+                  setShowMenu={setShowMenu}
                 />
               </ul>
             </div>

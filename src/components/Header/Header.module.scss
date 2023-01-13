@@ -1,8 +1,13 @@
+@use '../../assets/styles/mixin' as mixin;
+
 .container {
     background-color: var(--primary-color);
     display: flex;
     align-items: center;
     padding: 15px;
+    @include mixin.breakpoint-laptopS {
+        padding: 10px;
+    }
 }
 
 .logo {
@@ -10,6 +15,9 @@
     margin-left: 20px;
     display: flex;
     align-items: center;
+    @include mixin.breakpoint-laptopS {
+        font-size: 16px;
+    }
     .link div {
         &:first-child {
             text-transform: uppercase;
@@ -17,6 +25,10 @@
         &:last-child {
             font-size: 20px;
             padding-left: 1px;
+            text-align: center;
+            @include mixin.breakpoint-laptopS {
+                font-size: 15px;
+            }
         }
     }
     
@@ -25,29 +37,53 @@
 .nav {
     color: var(--text-color-light);
     margin-right: 10px;
-    ul {
+    @include mixin.breakpoint-laptopS {
+        font-size: 14px;
+        margin-right: 0;
+    }
+    .headerMenu {
         display: flex;
         align-items: center;
         justify-content: center;
+        @include mixin.breakpoint-tabletteM {
+            display: none;
+        }
     }
-    ul li {
+    .headerMenu li {
         display: flex;
         position: relative;
         padding: 0 15px;
         border-right: 1px solid white;
+        @include mixin.breakpoint-laptopM {
+            padding: 0 5px;
+        }
         &:last-child {
             border: 0;
-        }
-        &:hover {
-            .link {
-                color: #250902;
-            }
         }
     }
 }
 
 .link {
     color: var(--text-color-light);
+    padding: 10px;
+    &:hover {
+        color: #250902 !important;
+    }
+}
+
+.headerMenu {
+    @include mixin.breakpoint-tabletteM {
+        display: none;
+    }
+}
+
+.headerMenuMobile {
+    display: none;
+    margin-right: 15px;
+    cursor: pointer;
+    @include mixin.breakpoint-tabletteM {
+        display: block;
+    }
 }
 
 

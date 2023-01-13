@@ -1,6 +1,18 @@
-.scrollingMenu {
+@use '../../../../assets/styles/mixin' as mixin;
+
+.scrollingMenuLink {
+    width: 90px;
     cursor: pointer;
     position: relative;
+    @include mixin.breakpoint-laptopS {
+        width: 75px;
+     }
+    .link {
+        padding: 10px;
+        @include mixin.breakpoint-tabletteM {
+            padding: 5px;
+        }
+    }
     &:hover {
         .link {
             color: #250902;
@@ -15,10 +27,16 @@
     .scrollingArrowDown{
         margin-left: 10px;
         padding-bottom: 5px;
+        @include mixin.breakpoint-tabletteM {
+            margin-left: 5px;
+        }
     }
     .scrollingArrowUp{
         margin-left: 10px;
         padding-top: 5px;
+        @include mixin.breakpoint-tabletteM {
+            margin-left: 5px;
+        }
     }
 }
 

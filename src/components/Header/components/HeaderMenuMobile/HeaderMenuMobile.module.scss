@@ -1,0 +1,25 @@
+
+.menuContainer {
+    position: absolute;
+    z-index: 4;
+    top: 80px;
+    right: 0;
+    background-color: var(--primary-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menuMobile {
+    padding: 20px !important;
+    text-align: end;
+    font-size: 1.5rem;
+    li {
+        padding: 10px;
+        cursor: pointer;
+        &:hover {
+            a {
+                color: #250902 !important;
+            }
+        }
+    }
+}

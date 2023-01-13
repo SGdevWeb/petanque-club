@@ -1,0 +1,34 @@
+@use '../../../../../assets/styles/mixin' as mixin;
+
+.scrollingMenuLinkMobile {
+    position: relative;
+    &:hover {
+        .link {
+            color: #250902;
+        }
+        color: #250902;
+    }
+    .link {
+        display: flex;
+        justify-content: space-between;
+    }
+    .arrowContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .scrollingArrowLeft{
+        transform: rotate(-90deg);
+        padding-bottom: 5px;
+        @include mixin.breakpoint-tabletteM {
+            margin-left: 5px;
+        }
+    }
+    .scrollingArrowRight{
+        transform: rotate(90deg);
+        padding-top: 5px;
+        @include mixin.breakpoint-tabletteM {
+            margin-left: 5px;
+        }
+    }
+}
