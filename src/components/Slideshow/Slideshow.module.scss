@@ -70,6 +70,7 @@
 .carousel {
     div + div {
         border-radius: 10px;
+        max-height: 600px;
     }
     div>button{
         background-color: black;

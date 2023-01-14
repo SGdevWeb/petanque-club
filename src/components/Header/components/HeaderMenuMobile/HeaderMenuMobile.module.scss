@@ -1,12 +1,42 @@
 
-.menuContainer {
-    position: absolute;
+.container {
+    position: fixed;
     z-index: 4;
-    top: 80px;
+    top: 0;
     right: 0;
+    bottom: 0;
     background-color: var(--primary-color);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    width: 100%;
+    animation: translate 400ms;
+    overflow: auto;
+}
+
+@keyframes translate {
+    from {
+        margin-right: 100%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.home {
+    font-size: 24px;
+}
+
+.xmark {
+    font-size: 30px;
+}
+
+.home, .xmark {
+    cursor: pointer;
 }
 
 .menuMobile {
@@ -14,12 +44,8 @@
     text-align: end;
     font-size: 1.5rem;
     li {
+        text-align: center;
         padding: 10px;
         cursor: pointer;
-        &:hover {
-            a {
-                color: #250902 !important;
-            }
-        }
     }
 }

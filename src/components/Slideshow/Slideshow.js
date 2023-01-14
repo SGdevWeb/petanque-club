@@ -1,22 +1,13 @@
 import React from 'react'
 import styles from './Slideshow.module.scss'
-import news from '../../data/news.json'
 import Carousel from 'react-bootstrap/Carousel'
 
-function Slideshow({numberLastNews}) {
-
-  const lastNews = news.slice(0, numberLastNews)
-
-  function sortDate(a,b) {
-    let da = new Date(a.createdAt);
-    let db = new Date(b.createdAt);
-    return (da<db)?1:-1;
-  }
+function Slideshow({lastNewsByDate}) {
 
   return (
     <div className={styles.container}>
       <Carousel className={styles.carousel}>
-        {lastNews.sort(sortDate).map( el => (
+        {lastNewsByDate.map( el => (
         <Carousel.Item key={el.id}>
           <img
             className="d-block w-100"

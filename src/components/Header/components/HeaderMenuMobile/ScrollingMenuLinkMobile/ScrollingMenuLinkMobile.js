@@ -20,15 +20,15 @@ function ScrollingMenuLinkMobile({title, menu, setShowHeaderMobile }) {
           <div  className={`${styles.link} d-flex align-items justify-content`} 
                 style={titleMenuStyle()}
           > 
+            <span>{title}</span>
             <div className={styles.arrowContainer}>
               {showMenuMobile ? (
-              <i className={`fa-solid fa-sort-up ${styles.scrollingArrowRight}`}></i>
+              <i className={`fa-solid fa-sort-up ${styles.scrollingArrowUp}`}></i>
               ) : (
-              <i className={`fa-solid fa-sort-up ${styles.scrollingArrowLeft}`}></i>
+              <i className={`fa-solid fa-sort-down ${styles.scrollingArrowDown}`}></i>
               )
               }
             </div>
-            <span>{title}</span>
           </div>
       </div>
       {showMenuMobile &&

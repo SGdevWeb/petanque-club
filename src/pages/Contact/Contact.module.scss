@@ -3,9 +3,24 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 40px;
     @include mixin.breakpoint-tabletteS {
         padding: 20px;
+    }
+}
+
+.locationSection {
+    background-color: white;
+}
+
+.contactSection, .locationSection, .hoursSection {
+    padding: 30px;
+    padding-bottom: 60px;
+    h2 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 70px;
+        font-weight: 900;
+        text-shadow: 1px 1px 1px #250902;
     }
 }
 
@@ -67,8 +82,7 @@
 
 .maps {
     text-align: center;
-    width: 100%;
-    margin-top: 40px;
+    margin: 40px;
 }
 
 .hours {

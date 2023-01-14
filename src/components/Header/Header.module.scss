@@ -8,6 +8,11 @@
     @include mixin.breakpoint-laptopS {
         padding: 10px;
     }
+    @include mixin.breakpoint-tabletteM {
+        flex-direction: row-reverse;
+        justify-content: center;
+        position: relative;
+    }
 }
 
 .logo {
@@ -15,21 +20,40 @@
     margin-left: 20px;
     display: flex;
     align-items: center;
+    flex: auto;
     @include mixin.breakpoint-laptopS {
         font-size: 16px;
     }
-    .link div {
-        &:first-child {
-            text-transform: uppercase;
+    @include mixin.breakpoint-tabletteM {
+        flex: none;
+        margin-right: 20px;
+    }
+    .link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include mixin.breakpoint-tabletteM {
+            flex-direction: row;
         }
-        &:last-child {
+        div {
+            &:first-child {
+            text-transform: uppercase;
+            @include mixin.breakpoint-tabletteM {
+                margin-right: 5px;
+            }
+            }
+            &:last-child {
             font-size: 20px;
             padding-left: 1px;
             text-align: center;
             @include mixin.breakpoint-laptopS {
                 font-size: 15px;
             }
-        }
+            }
+            @include mixin.breakpoint-tabletteM {
+            text-align: center;
+            }
+        } 
     }
     
 }
@@ -78,11 +102,14 @@
 }
 
 .headerMenuMobile {
+    font-size: 24px;
     display: none;
-    margin-right: 15px;
+    left: 15px;
+    bottom: 10px;
     cursor: pointer;
     @include mixin.breakpoint-tabletteM {
         display: block;
+        position: absolute;
     }
 }
 

@@ -7,21 +7,21 @@ function Footer() {
       <div className={styles.contactDetails}>
         <div className={styles.address}>
           <i className="fa-solid fa-location-dot"></i>
-          <div>
+          <div className={styles.content}>
             <div className={styles.title}>adresse</div>
             <div className={styles.text}>44 rue Henri Barbusse, 59880 Saint-Saulve</div>
           </div>            
         </div>
         <div className={styles.phone}>
           <i className="fa-solid fa-phone-flip"></i>
-          <div>
+          <div className={styles.content}>
             <div className={styles.title}>téléphone</div>
             <div className={styles.text}>03 27 33 11 52</div>
           </div>
         </div>
         <div className={styles.mail}>
           <i className="fa-regular fa-envelope"></i>
-          <div>
+          <div className={styles.content}>
             <div className={styles.title}>e-mail</div>
             <div className={styles.text}>petanque@gmail.com</div>
           </div>

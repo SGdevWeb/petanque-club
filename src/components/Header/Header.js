@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <div className={styles.container}>
-      <div className={`${styles.logo} flex-fill`}>
+      <div className={`${styles.logo}`}>
         <Link className={styles.link} style={{ padding : '0px'}} to="/">
           <div>p é t a n q u e</div>
           <div> Saint Saulvienne </div>
