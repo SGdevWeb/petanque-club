@@ -35,7 +35,7 @@ function Contact() {
         <div className={styles.container}>
             <section className={styles.contactSection}>
                 <h2>contact</h2>
-                <div className='d-flex justify-content p-20'>
+                <div className={styles.titleSection}>
                     <p className={styles.contactUsTitle}>Pour plus d'informations, contactez nous </p>
                 </div>
                 <form className='mt-20 d-flex flex-column justify-content' onSubmit={ handleSubmit(submit) } method="POST">
@@ -78,7 +78,7 @@ function Contact() {
             </section>
        
             <section className={styles.locationSection}>
-                <div className='d-flex justify-content p-20'>
+                <div className={styles.titleSection}>
                     <p className={styles.mapsTitle}>Où nous trouver ?</p>
                 </div>
                 <div className={styles.maps}>
@@ -88,22 +88,22 @@ function Contact() {
 
             <section className={styles.hoursSection}>
                 <h2>horaires</h2>
-                <div className='d-flex justify-content p-20'>
+                <div className={styles.titleSection}>
                     <p className={styles.hoursTitle}>Horaires d'ouverture</p>
                 </div>
                 <div className={styles.hours}>
-                <div>
-                    <span>Mercredi</span>
-                    <span>14:30 - 19:30</span>
-                </div>
-                <div>
-                    <span>Vendredi</span>
-                    <span>14:30 - 20:30</span>
-                </div>
-                <div>
-                    <span>Samedi</span>
-                    <span>14:30 - 20:30</span>
-                </div>
+                    <div>
+                        <span>Mercredi</span>
+                        <span>14:30 - 19:30</span>
+                    </div>
+                    <div>
+                        <span>Vendredi</span>
+                        <span>14:30 - 20:30</span>
+                    </div>
+                    <div>
+                        <span>Samedi</span>
+                        <span>14:30 - 20:30</span>
+                    </div>
                 </div>
             </section>
             

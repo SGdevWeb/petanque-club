@@ -28,6 +28,9 @@
         flex: none;
         margin-right: 20px;
     }
+    @include mixin.breakpoint-mobileM {
+        font-size: 12px;
+    }
     .link {
         display: flex;
         flex-direction: column;

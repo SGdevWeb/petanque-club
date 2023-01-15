@@ -3,9 +3,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    @include mixin.breakpoint-tabletteS {
-        padding: 20px;
-    }
 }
 
 .locationSection {
@@ -15,12 +12,30 @@
 .contactSection, .locationSection, .hoursSection {
     padding: 30px;
     padding-bottom: 60px;
+    @include mixin.breakpoint-mobileL {
+        padding-bottom: 30px;
+    }
     h2 {
         text-transform: uppercase;
         color: white;
         font-size: 70px;
         font-weight: 900;
         text-shadow: 1px 1px 1px #250902;
+        @include mixin.breakpoint-laptopS {
+            font-size: 50px;
+        }
+        @include mixin.breakpoint-mobileL {
+            display: none;
+        }
+    }
+}
+
+.titleSection {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    @include mixin.breakpoint-mobileS {
+        padding: 0;
     }
 }
 
@@ -30,6 +45,16 @@
     color: var(--primary-color);
     background-color: #fafafa;
     border-radius: 10px;
+    text-align: center;
+    @include mixin.breakpoint-laptopS {
+        font-size: 24px;
+    }
+    @include mixin.breakpoint-mobileM {
+        font-size: 20px;
+    }
+    @include mixin.breakpoint-mobileS {
+        
+    }
 }
 
 .form {
@@ -78,11 +103,23 @@
     font-size: 20px;
     width: 30%;
     margin: auto;
+    @include mixin.breakpoint-mobileL {
+        width: 100%;
+    }
 }
 
 .maps {
-    text-align: center;
-    margin: 40px;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
 }
 
 .hours {
@@ -95,6 +132,22 @@
     margin-bottom: 40px;
     background-color: #fafafa;
     border-radius: 10px;
+    @include mixin.breakpoint-laptopM {
+        width: 40%;
+    }
+    @include mixin.breakpoint-laptopS {
+        width: 45%;
+    }
+    @include mixin.breakpoint-tabletteM {
+        width: 50%;
+    }
+    @include mixin.breakpoint-tabletteS {
+        width: 60%;
+    }
+    @include mixin.breakpoint-mobileL {
+        width: 100%;
+        margin-bottom: 10px;
+    }
     &>div {
         display: flex;
         justify-content: space-between;
@@ -102,5 +155,4 @@
             font-weight: 700;
         }
     }
-     
 }

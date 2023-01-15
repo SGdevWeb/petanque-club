@@ -1,3 +1,5 @@
+@use '../../../../assets/styles/mixin' as mixin;
+
 .container {
     background-color: white;
     margin-top: 50px;
@@ -9,6 +11,28 @@
     border-left: 1px solid var(--primary-color);
     flex-direction: row;
     box-shadow: 2px -2px 4px black;
+    @include mixin.breakpoint-laptopS {
+        height: 250px;
+    }
+    @include mixin.breakpoint-tabletteM {
+        height: 200px;
+        margin-top: 30px;
+    }
+    @include mixin.breakpoint-tabletteS {
+        height: 180px;
+    }
+    @include mixin.breakpoint-mobileL {
+        height: 140px;
+    }
+    @include mixin.breakpoint-mobileL {
+        margin-top: 15px;
+    }
+    @include mixin.breakpoint-mobileM {
+        height: 120px;
+    }
+    @include mixin.breakpoint-mobileS {
+        height: 110px;
+    }
     img {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 0;
@@ -41,22 +65,53 @@
 .description {
     > div {
         padding: 5px;
+        @include mixin.breakpoint-tabletteM{
+            padding: 0;
+        }
     }
     padding: 5px;
     flex: 2;
     display: flex;
     flex-direction: column;
+
     .date {
         color: gray;
+        @include mixin.breakpoint-mobileL {
+            font-size: 14px;
+        }
+        @include mixin.breakpoint-mobileM {
+            font-size: 12px;
+        }
+        @include mixin.breakpoint-mobileM {
+            font-size: 11px;
+        }
     }
     .title {
         text-transform: uppercase;
         font-size: 22px;
         color: var(--primary-color);
+        @include mixin.breakpoint-mobileL {
+            font-size: 16px;
+        }
+        @include mixin.breakpoint-mobileM {
+            font-size: 14px;
+        }
+        @include mixin.breakpoint-mobileS {
+            font-size: 12px;
+        }
     }
     .text {
         flex-grow: 3;
         text-align: justify;
         overflow: hidden;
+        @include mixin.breakpoint-mobileL {
+            font-size: 14px;
+        }
+        @include mixin.breakpoint-mobileM {
+            font-size: 12px;
+        }
+        @include mixin.breakpoint-mobileS {
+            font-size: 11px;
+        }
     }
 }

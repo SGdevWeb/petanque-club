@@ -5,7 +5,7 @@ import news from './../../data/news.json'
 
 function Homepage() {
 
-  const numberLastNews = 3
+  const numberLastNews = 4
 
   const lastNews = news.slice(0, numberLastNews)
 

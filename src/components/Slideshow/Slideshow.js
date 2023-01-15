@@ -14,9 +14,9 @@ function Slideshow({lastNewsByDate}) {
             src={el.picture}
             alt={el.title}
           />
-          <Carousel.Caption>
-            <h3>{el.title}</h3>
-            <p>
+          <Carousel.Caption className={styles.caption}>
+            <h3 className={styles.captionTitle}>{el.title}</h3>
+            <p className={styles.captionText}> 
               {el.text.split(' ').slice(0, 12).join(' ')} ...
             </p>
           </Carousel.Caption>
@@ -24,16 +24,15 @@ function Slideshow({lastNewsByDate}) {
         ))}
       </Carousel>
     
-        {/* 
-        // Carousel without library
-        <div className={styles.carouselItems}>
-            {news.sort(sortDate).map( el => (
+        
+        {/* <div className={styles.carouselItems}>
+            {lastNewsByDate.map( el => (
               <div key={el.id} className={styles.carouselItem}>
                 <img src={el.picture} alt={el.title}/>
               </div>
             ))}
-            <div key={news[0].id + news[0].title} className={styles.carouselItem}>
-              <img src={news[0].picture} alt={news[0].title}/>
+            <div key={lastNewsByDate[0].id + lastNewsByDate[0].title} className={styles.carouselItem}>
+              <img src={lastNewsByDate[0].picture} alt={lastNewsByDate[0].title}/>
             </div>
         </div> */}
 
