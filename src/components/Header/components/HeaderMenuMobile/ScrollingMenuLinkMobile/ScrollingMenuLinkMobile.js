@@ -23,9 +23,9 @@ function ScrollingMenuLinkMobile({title, menu, setShowHeaderMobile }) {
             <span>{title}</span>
             <div className={styles.arrowContainer}>
               {showMenuMobile ? (
-              <i className={`fa-solid fa-sort-up ${styles.scrollingArrowUp}`}></i>
+              <i className={`fa-solid fa-xmark ${styles.scrollingUp}`}></i>
               ) : (
-              <i className={`fa-solid fa-sort-down ${styles.scrollingArrowDown}`}></i>
+              <i className={`fa-solid fa-xmark ${styles.scrollingDown}`}></i>
               )
               }
             </div>
@@ -34,8 +34,6 @@ function ScrollingMenuLinkMobile({title, menu, setShowHeaderMobile }) {
       {showMenuMobile &&
       <ScrollingMenuMobile
         setShowHeaderMobile={setShowHeaderMobile}
-        showMenuMobile={showMenuMobile}
-        setShowMenuMobile={setShowMenuMobile}
         menu={menu}
         title={title}
       />

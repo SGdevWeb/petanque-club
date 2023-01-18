@@ -17,6 +17,7 @@ import Licences from './pages/Club/pages/Licences/Licences';
 import Partenaires from './pages/Club/pages/Partenaires/Partenaires';
 import Horaires from './pages/Club/pages/Horaires/Horaires';
 import ConcoursSocietaire from './pages/Club/pages/ConcoursSocietaire/ConcoursSocietaire';
+import Article from './components/Article/Article';
 
 export const router = createBrowserRouter([
   {
@@ -30,7 +31,11 @@ export const router = createBrowserRouter([
       {
         path: '/Actu',
         element: <Actu />,
-        },
+      },
+      {
+        path:'/Actu/article/:id',
+        element: <Article />
+      },
       {
       path: '/Equipes',
       element: <Equipes />,
@@ -40,23 +45,23 @@ export const router = createBrowserRouter([
       element: <Club />,
       children: [
         {
-          path: '/Club/Comité',
+          path: 'Comité',
           element: <Comite />
         },
         {
-          path: '/Club/Licences',
+          path: 'Licences',
           element: <Licences />
         },
         {
-          path: '/Club/Partenaires',
+          path: 'Partenaires',
           element: <Partenaires />
         },
         {
-          path: '/Club/Horaires',
+          path: 'Horaires',
           element: <Horaires />
         },
         {
-          path: '/Club/Concours-sociétaire',
+          path: 'Concours-sociétaire',
           element: <ConcoursSocietaire />
         },
       ]
@@ -66,23 +71,23 @@ export const router = createBrowserRouter([
         element: <Saison />,
         children: [
           {
-            path:'/Saison/Coupe-de-france',
+            path:'Coupe-de-france',
             element: <CoupeDeFrance />
           },
           {
-            path:'/Saison/Championnats',
+            path:'Championnats',
             element: <Championnats />
           },
           {
-            path:'/Saison/Concours-hivernaux',
+            path:'Concours-hivernaux',
             element: <ConcoursHivernaux />
           },
           {
-            path:'/Saison/Concours-nationaux',
+            path:'Concours-nationaux',
             element: <ConcoursNationaux />
           },
           {
-            path:'/Saison/Autres-concours',
+            path:'Autres-concours',
             element: <AutresConcours />
           },
         ]

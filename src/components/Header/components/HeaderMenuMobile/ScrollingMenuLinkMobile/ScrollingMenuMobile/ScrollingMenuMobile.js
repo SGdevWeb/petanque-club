@@ -2,7 +2,7 @@ import React from 'react'
 import MenuMobile from './MenuMobile/MenuMobile'
 import styles from './ScrollingMenuMobile.module.scss'
 
-function ScrollingMenuMobile({ showMenuMobile, setShowMenuMobile, menu, title }) {
+function ScrollingMenuMobile({ menu, title, setShowHeaderMobile }) {
 
     return (
         <>
@@ -14,7 +14,7 @@ function ScrollingMenuMobile({ showMenuMobile, setShowMenuMobile, menu, title })
                     <MenuMobile
                     menu={menu}
                     title={title}
-                    setShowMenuMobile={setShowMenuMobile}
+                    setShowHeaderMobile={setShowHeaderMobile}
                     />
                 </ul>
                 </div>

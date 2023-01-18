@@ -15,16 +15,7 @@
         position: absolute;
         right: 0;
     }
-    .scrollingArrowUp{
-        @include mixin.breakpoint-tabletteM {
-            margin-left: 5px;
-        }
-    }
-    .scrollingArrowdown{
-        position: absolute;
-        right: 0;
-        @include mixin.breakpoint-tabletteM {
-            margin-left: 5px;
-        }
+    .scrollingDown {
+        transform: rotate(45deg);
     }
 }
