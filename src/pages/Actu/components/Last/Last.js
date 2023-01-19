@@ -5,7 +5,7 @@ function Last({ newsByDate }) {
 
     const last = newsByDate[0]
 
-    console.log(last)
+    // console.log("last", last)
 
     return (
         <div className={styles.container}>
