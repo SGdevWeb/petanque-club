@@ -4,28 +4,32 @@
     background-color: white;
     margin-top: 50px;
     display: flex;
-    height: 300px;
+    height: 290px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 10px;
     border-bottom: 1px solid var(--primary-color);
     border-left: 1px solid var(--primary-color);
     flex-direction: row;
     box-shadow: 2px -2px 4px black;
+    @include mixin.breakpoint-laptopM {
+        height: 240px;
+    }
     @include mixin.breakpoint-laptopS {
-        height: 250px;
+        height: 235px;
     }
     @include mixin.breakpoint-tabletteM {
-        height: 200px;
+        height: 210px;
         margin-top: 30px;
     }
     @include mixin.breakpoint-tabletteS {
-        height: 180px;
+        height: 185px;
     }
-    @include mixin.breakpoint-mobileL {
-        height: 140px;
+    @include mixin.breakpoint-mobileXL {
+        height: 170px;
     }
     @include mixin.breakpoint-mobileL {
         margin-top: 15px;
+        height: 140px;
     }
     @include mixin.breakpoint-mobileM {
         height: 120px;
@@ -104,6 +108,9 @@
         flex-grow: 3;
         text-align: justify;
         overflow: hidden;
+        @include mixin.breakpoint-mobileXL {
+            font-size: 14px;
+        }
         @include mixin.breakpoint-mobileL {
             font-size: 14px;
         }

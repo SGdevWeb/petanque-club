@@ -9,7 +9,9 @@ function Footer() {
           <i className="fa-solid fa-location-dot"></i>
           <div className={styles.content}>
             <div className={styles.title}>adresse</div>
-            <div className={styles.text}>44 rue Henri Barbusse, 59880 Saint-Saulve</div>
+            <div className={styles.text}>
+              44 rue Henri Barbusse, Saint-Saulve
+            </div>
           </div>            
         </div>
         <div className={styles.phone}>

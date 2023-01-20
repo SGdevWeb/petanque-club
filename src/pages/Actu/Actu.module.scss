@@ -3,8 +3,16 @@
 
 .container{
     padding: 10px;
+    padding-bottom: 218px;
     background-color: var(--gray);
     @include mixin.breakpoint-tabletteM {
         padding: 0;
+        padding-bottom: 328px;
+    }
+    @include mixin.breakpoint-tabletteS {
+        padding-bottom: 307px;
+    }
+    @include mixin.breakpoint-mobileM {
+        padding-bottom: 295px;
     }
 }

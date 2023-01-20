@@ -3,6 +3,8 @@
 .container {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
     background-color: var(--primary-color);
     width: 100%;
     max-width: 1400px;
@@ -107,11 +109,15 @@
     margin-top: 30px;
     color: lightgray;
     text-align: center;
+    display: flex;
     @include mixin.breakpoint-tabletteS {
         font-size: 14px;
     }
     @include mixin.breakpoint-mobileL {
         font-size: 12px;
+    }
+    @include mixin.breakpoint-mobileM {
+        flex-direction: column;
     }
     i {
         padding-right: 2px;

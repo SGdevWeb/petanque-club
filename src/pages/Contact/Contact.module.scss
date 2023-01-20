@@ -1,6 +1,7 @@
 @use '../../assets/styles/mixin' as mixin;
 
 .container {
+    padding-bottom: 218px;
     display: flex;
     flex-direction: column;
 }
