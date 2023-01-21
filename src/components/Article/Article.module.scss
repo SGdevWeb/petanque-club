@@ -5,11 +5,20 @@
     @include mixin.breakpoint-laptopS {
         padding: 40px 50px;
     }
+    @include mixin.breakpoint-tabletteM {
+        padding: 0;
+        padding-bottom: 328px;
+    }
     @include mixin.breakpoint-tabletteS {
         padding: 40px 30px;
+        padding-bottom: 307px;
     }
     @include mixin.breakpoint-mobileL {
         padding: 20px 10px;
+    }
+
+    @include mixin.breakpoint-mobileM {
+        padding-bottom: 295px;
     }
 }
 

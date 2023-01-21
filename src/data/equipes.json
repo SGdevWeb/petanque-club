@@ -1,0 +1,67 @@
+{
+    "championnats":[
+        {
+            "id":"1",
+            "title":"Equipe régionale féminine",
+            "cover":"crcf_img.jpeg",
+            "membres":{
+                "joueurs": ["Irène Delobe", "Florence Slimani", "Sylvie Triquet", "Stephanie Berquet", "Laurence Sonck"],
+                "coach":"Philippe Sonck"
+            },
+            "calendrier": "calendrier.jpeg",
+            "resultats": "",
+            "féminines": true
+        },
+        {
+            "id":"2",
+            "title":"Equipe régionale",
+            "cover":"crc_img.jpeg",
+            "membres":{
+                "joueurs": ["Philippe Meyns", "Pascal Martin", "Samuel Gustin", "Francis Triquet", "Bertrand Cugnot", "Vincent Gabez"],
+                "coach":"Jean-Jacques Gouget"
+            },
+            "calendrier": "calendrier.jpeg",
+            "resultats": "",
+            "féminines": false
+        },
+        {
+            "id":"3",
+            "title":"Equipe départementale 2",
+            "cover":"cdc2_img.jpeg",
+            "membres":{
+                "joueurs": ["Pascal Marsy", "Laurent Stoop", "Mathieu Cauchies", "Saïd", "David Philippe", "Sébastien Cugnot"],
+                "coach":"Nathalie Philippe"
+            },
+            "calendrier": "calendrier.jpeg",
+            "resultats": "",
+            "féminines": false
+        },
+        {
+            "id":"4",
+            "title":"Equipe départementale 3",
+            "cover":"cdc3_img.jpeg",
+            "membres":{
+                "joueurs": ["Jean-Luc", "Jean Robert", "André", "Michel"],
+                "coach":"Hervé Brouillard"
+            },
+            "calendrier": "calendrier.jpeg",
+            "resultats": "",
+            "féminines": false
+        }
+    ],
+    "coupe":[
+        {
+            "id":"1",
+            "title":"Equipe coupe de france",
+            "cover":"crc_img.jpeg",
+            "membres":{
+                "joueurs": ["Philippe Meyns", "Pascal Martin", "Samuel Gustin", "Francis Triquet", "Bertrand Cugnot", "Vincent Gabez","Irène Delobe", "Florence"],
+                "coach":"Jean Jacques Gouget"
+            },
+            "calendrier": "calendrier.jpeg",
+            "resultats": ""
+        }
+    ]
+}
+
+    

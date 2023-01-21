@@ -1,0 +1,22 @@
+@use '../../../../assets/styles/mixin' as mixin;
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0 !important;
+    @include mixin.breakpoint-mobileXL {
+        font-size: 16px;
+    }
+    @include mixin.breakpoint-mobileM {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+.text {
+    padding: 5px;
+}

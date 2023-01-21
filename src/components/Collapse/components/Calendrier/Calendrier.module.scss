@@ -1,0 +1,10 @@
+@use '../../../../assets/styles/mixin' as mixin;
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    @include mixin.breakpoint-tabletteS {
+        padding: 0;
+    }
+}

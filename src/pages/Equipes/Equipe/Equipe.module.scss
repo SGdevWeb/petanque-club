@@ -1,0 +1,44 @@
+@use '../../../assets/styles/mixin' as mixin;
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px;
+    @include mixin.breakpoint-tabletteM {
+        margin: 15px 10px;
+        padding: 20px;
+    }
+    @include mixin.breakpoint-mobileXL {
+        padding: 15px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    @include mixin.breakpoint-mobileS {
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+.title {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    @include mixin.breakpoint-tabletteM {
+        font-size: 26px;
+    }
+    @include mixin.breakpoint-mobileXL {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    @include mixin.breakpoint-mobileL {
+        font-size: 18px;
+    }
+}
+
+.img {
+    width: 100%;
+    border-radius: 20px;
+    @include mixin.breakpoint-mobileXL {
+        border-radius: 10px;
+    }
+}
