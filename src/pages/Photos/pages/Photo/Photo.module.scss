@@ -1,0 +1,13 @@
+.container {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 400px;
+    height: 250px;
+    width: 30%;
+    margin: 15px;
+}

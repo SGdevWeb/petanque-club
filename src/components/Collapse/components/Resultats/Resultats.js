@@ -6,7 +6,7 @@ function Resultats({ equipe }) {
         {equipe.resultats === "" ? (
           <p>Aucun résultat pour le moment !</p>
         ) : (
-          <img src={`${window.location.origin}/images/Equipes/${equipe.resultats}`} alt="" />
+          <img src={`${window.location.origin}/images/Equipes/${equipe.resultats}`} alt="Résultats" />
         )}
     </div>
   )

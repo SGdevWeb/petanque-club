@@ -18,6 +18,7 @@ import Partenaires from './pages/Club/pages/Partenaires/Partenaires';
 import Horaires from './pages/Club/pages/Horaires/Horaires';
 import ConcoursSocietaire from './pages/Club/pages/ConcoursSocietaire/ConcoursSocietaire';
 import Article from './components/Article/Article';
+import Photo from './pages/Photos/pages/Photo/Photo';
 
 export const router = createBrowserRouter([
   {
@@ -95,6 +96,10 @@ export const router = createBrowserRouter([
       {
         path: '/Photos',
         element: <Photos />
+      },
+      {
+        path: '/Photos/:id',
+        element: <Photo />
       },
       {
         path: '/Contact',

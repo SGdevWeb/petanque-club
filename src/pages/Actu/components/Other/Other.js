@@ -13,11 +13,12 @@ function Other({ newsFilter, setFilter }) {
             />
                 {otherNews.map(el => (
                 <News
-                    key={el.id} 
+                    key={el.id}
+                    id={el.id}
                     img={el.picture}
                     date={el.createdAt}
                     title={el.title}
-                    summary={el.text}
+                    text={el.text}
                 />
                 ))}
         </div>

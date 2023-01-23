@@ -1,9 +1,19 @@
 @use '../../assets/styles/mixin' as mixin;
 
 .container {
-    padding-bottom: 218px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 258px;
+    @include mixin.breakpoint-tabletteM {
+        padding: 0;
+        padding-bottom: 328px;
+    }
+    @include mixin.breakpoint-tabletteS {
+        padding-bottom: 307px;
+    }
+    @include mixin.breakpoint-mobileM {
+        padding-bottom: 295px;
+    }
 }
 
 .locationSection {

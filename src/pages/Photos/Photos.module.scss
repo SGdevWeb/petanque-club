@@ -1,0 +1,27 @@
+@use '../../assets/styles/mixin' as mixin;
+
+.container {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 258px;
+    @include mixin.breakpoint-tabletteM {
+        padding: 0;
+        padding-bottom: 328px;
+    }
+    @include mixin.breakpoint-tabletteS {
+        padding-bottom: 307px;
+    }
+    @include mixin.breakpoint-mobileM {
+        padding-bottom: 295px;
+    }
+}
+
+.link {
+    max-width: 400px;
+    height: 250px;
+    width: 30%;
+    margin: 15px;
+}

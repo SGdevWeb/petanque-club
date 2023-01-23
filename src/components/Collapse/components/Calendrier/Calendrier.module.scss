@@ -8,3 +8,14 @@
         padding: 0;
     }
 }
+
+.image {
+    cursor: pointer;
+    width: auto;
+}
+
+.resize {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}

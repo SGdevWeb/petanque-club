@@ -9,8 +9,6 @@ function Article() {
   const articleId = useParams().id
   const article = news.find((element) => element.id === articleId)
 
-  console.log(article)
-
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
