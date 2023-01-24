@@ -1,8 +1,10 @@
-import React from 'react'
+import styles from './Horaires.module.scss'
 
 function Horaires() {
   return (
-    <div>Horaires</div>
+    <div className={styles.container}>
+      <p>La pétanque de Saint Saulve possède un boulodrome extérieur ainsi qu'un boulodrome couvert de plus de 30 terrains avec son club house</p>
+    </div>
   )
 }
 

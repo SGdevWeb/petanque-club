@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    width: 20%;
+    box-shadow: 1px 1px 2px var(--primary-color);
+    background-color: white;
+}
+
+.profilImg, .name, .fonction {
+    text-align: center;
+}
+
+.profilImg {
+    padding: 10px;
+    font-size: 100px;
+    color: gray;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.fonction {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}

@@ -1,9 +1,9 @@
-import React from 'react'
+import styles from './Club.module.scss'
 import { Outlet } from 'react-router-dom'
 
 function Club() {
   return (
-    <div>
+    <div className={styles.container}>
         <Outlet />
     </div>
   )
