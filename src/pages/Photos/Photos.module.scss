@@ -21,7 +21,18 @@
 
 .link {
     max-width: 400px;
-    height: 250px;
-    width: 30%;
-    margin: 15px;
+    height: 300px;
+    width: 45%;
+    padding: 15px;
+    @include mixin.breakpoint-mobileXL {
+        width: 100%;
+        max-width: none;
+        height: 400px;
+    }
+    @include mixin.breakpoint-mobileL {
+        height: 300px;
+    }
+    @include mixin.breakpoint-mobileM {
+        height: 260px;
+    }
 }

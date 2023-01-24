@@ -4,8 +4,6 @@ import News from './News/News'
 
 function LastNews({lastNewsByDate}) {
 
-  console.log(lastNewsByDate)
-
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Dernières actus</h2>

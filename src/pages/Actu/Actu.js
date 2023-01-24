@@ -20,8 +20,6 @@ function Actu() {
     return filter.toLowerCase() === '' ? el : el.title.toLowerCase().includes(filter) || el.text.toLowerCase().includes(filter)
   }).sort(sortDate)
 
-  console.log(newsByDate)
-
   return (
     <div className={styles.container}>
         <Last 

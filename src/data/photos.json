@@ -2,23 +2,23 @@
     {
         "id": "1",
         "cover": "cdc2_img.jpeg",
-        "photos": ["cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg"],
-        "event": "Championnat départemental J1",
+        "photos": ["cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg","cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg"],
+        "event": "Championnat départemental 2 J1",
         "date": "20 octobre 2022",
         "createdAt": "2022 10 20"
     },
     {
         "id": "2",
         "cover": "cdc3_img.jpeg",
-        "photos": ["cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg"],
-        "event": "Championnat départemental J1",
+        "photos": ["cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg","cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg"],
+        "event": "Championnat départemental 3 J1",
         "date": "20 octobre 2022",
         "createdAt": "2022 10 20"
     },
     {
         "id": "3",
         "cover": "crc_img.jpeg",
-        "photos": ["cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg"],
+        "photos": ["cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg","cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg"],
         "event": "Championnat régional J1",
         "date": "27 octobre 2022",
         "createdAt": "2022 10 20"
@@ -26,7 +26,7 @@
     {
         "id": "4",
         "cover": "crcf_img.jpeg",
-        "photos": ["cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg"],
+        "photos": ["cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg","cdc2_img.jpeg", "cdc3_img.jpeg","crc_img.jpeg", "crcf_img.jpeg"],
         "event": "Championnat régional féminin J1",
         "date": "27 octobre 2022",
         "createdAt": "2022 10 20"

@@ -18,7 +18,8 @@ import Partenaires from './pages/Club/pages/Partenaires/Partenaires';
 import Horaires from './pages/Club/pages/Horaires/Horaires';
 import ConcoursSocietaire from './pages/Club/pages/ConcoursSocietaire/ConcoursSocietaire';
 import Article from './components/Article/Article';
-import Photo from './pages/Photos/pages/Photo/Photo';
+import Gallery from './pages/Photos/pages/Gallery/Gallery';
+import Photo from './pages/Photos/pages/Gallery/Gallery';
 
 export const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/',
+        index: true,
         element: <Homepage />,
       },
       {
@@ -99,6 +100,10 @@ export const router = createBrowserRouter([
       },
       {
         path: '/Photos/:id',
+        element: <Gallery />
+      },
+      {
+        path: '/Photos/:id/:title',
         element: <Photo />
       },
       {

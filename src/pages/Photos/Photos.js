@@ -12,6 +12,7 @@ function Photos() {
             img={`${window.location.origin}/images/Photos/${photo.cover}`}
             title={photo.event}
             date={photo.date}
+            description={true}
           />
         </Link>
       ))}

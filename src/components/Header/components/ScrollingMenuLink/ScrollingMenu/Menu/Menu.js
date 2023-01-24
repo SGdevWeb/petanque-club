@@ -4,8 +4,6 @@ import styles from './Menu.module.scss'
 
 function Menu({menu, title, setShowMenu}) {
 
-  console.log(menu)
-
   return (
     menu.map((element, key) => (
       <Link onClick={() => setShowMenu(false)} key={key} className={styles.link} to={`/${title}/${element.split(" ").join('-')}`}>
