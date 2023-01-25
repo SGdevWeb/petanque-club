@@ -1,7 +1,6 @@
 @use '../../assets/styles/mixin' as mixin;
 
 .container{
-    padding: 10px;
     padding-bottom: 218px;
     background-color: var(--gray);
     @include mixin.breakpoint-tabletteM {

@@ -1,12 +1,25 @@
+@use '../../../../../../assets/styles/mixin' as mixin;
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     margin: 10px;
-    width: 20%;
+    width: 260px;
     box-shadow: 1px 1px 2px var(--primary-color);
     background-color: white;
+    @include mixin.breakpoint-tabletteM {
+        width: 220px;
+        padding: 10px;
+    }
+    @include mixin.breakpoint-tabletteS {
+        width: 170px;
+        padding: 5px;
+    }
+    @include mixin.breakpoint-mobileXL {
+        width: 100%;
+    }
 }
 
 .profilImg, .name, .fonction {
@@ -17,14 +30,33 @@
     padding: 10px;
     font-size: 100px;
     color: gray;
+    @include mixin.breakpoint-tabletteM {
+        font-size: 80px;
+    }
 }
 
 .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
+    height: 46px;
+    @include mixin.breakpoint-tabletteM {
+        font-size: 20px;
+    }
+    @include mixin.breakpoint-tabletteS {
+        font-size: 18px;
+    }
 }
 
 .fonction {
     font-size: 30px;
     text-transform: uppercase;
     color: var(--primary-color);
+    @include mixin.breakpoint-tabletteM {
+        font-size: 26px;
+    }
+    @include mixin.breakpoint-tabletteS {
+        font-size: 22px;
+    }
 }

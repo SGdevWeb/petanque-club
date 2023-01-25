@@ -1,17 +1,32 @@
-.introduction {
+@use '../../../../assets/styles/mixin' as mixin;
+
+.introText, .assemblyText {
     padding: 20px 10%;
-    text-align: center;
+    text-align: justify;
+    max-width: 1000px;
+    margin: auto !important;
+    @include mixin.breakpoint-mobileXL {
+        padding: 5px;
+    }
 }
 
-.title {
+.title1 {
+    padding-top: 20px;
+}
+
+.title2 {
+    padding-top: 20px;
+}
+
+.title1, .title2 {
     text-transform: uppercase;
     text-align: center;
     color: var(--primary-color);
-    margin-top: 40px;
+
 } 
 
 .members {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -20,5 +35,49 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px;
+    padding: 20px;
+    @include mixin.breakpoint-mobileXL {
+        padding: 20px 5px;
+    }
+}
+
+.assemblyText {
+    p:first-child {
+        padding: 10px 0;
+    }
+    h3 {
+        color: var(--primary-color);
+        margin-top: 5px;
+        font-size: 20px;
+        @include mixin.breakpoint-mobileXL {
+            font-size: 20px;
+        }
+        @include mixin.breakpoint-mobileM {
+            font-size: 18px;
+        }
+    }
+    .lastAssembly {
+        text-align: center;
+        margin: 30px;
+        @include mixin.breakpoint-mobileXL {
+            margin: 0;
+            margin-top: 20px;
+        }
+        a {
+            padding: 5px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            @include mixin.breakpoint-mobileXL {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.intro, .assembly {
+    background-color: white;
+}
+
+.intro, .assembly, .desktop {
+    padding: 20px;
 }

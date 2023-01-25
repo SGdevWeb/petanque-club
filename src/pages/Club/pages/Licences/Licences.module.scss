@@ -1,3 +1,5 @@
+@use '../../../../assets/styles/mixin' as mixin;
+
 .container {
     display: flex;
     flex-direction: column;
@@ -11,14 +13,19 @@
     padding: 30px;
     text-transform: uppercase;
     color: var(--primary-color);
+    @include mixin.breakpoint-tabletteM {
+        padding: 10px;
+    }
 }
 
 .section {
     text-align: left;
     max-width: 1000px;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding: 30px;
+    @include mixin.breakpoint-mobileXL {
+        padding: 10px;
+    }
     h2, h3 {
         color: var(--primary-color);
 
@@ -44,14 +51,16 @@
 }
 
 .tarif {
-    padding: 30px;
-    padding-bottom: 50px;
     table {
         width: 300px;
         margin: auto;
         padding: 30px;
         border: 1px solid black;
         border-collapse: collapse;
+        @include mixin.breakpoint-mobileL {
+            width: 220px;
+        }
+        
     }
     caption {
         text-align: center;
@@ -62,5 +71,11 @@
     td {
         border: 1px solid black;
         padding: 5px;
+    }
+    p {
+        text-align: left;
+        max-width: 1000px;
+        margin: auto !important;
+        padding: 15px 0;
     }
 }
