@@ -1,0 +1,95 @@
+@use '../../../../assets/styles/mixin' as mixin;
+
+.container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+    @include mixin.breakpoint-tabletteS {
+        padding: 20px;
+    }
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 40px;
+    padding: 30px;
+    @include mixin.breakpoint-tabletteS {
+        padding: 10px;
+    }
+    @include mixin.breakpoint-mobileL {
+        font-size: 30px;
+    }
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    @include mixin.breakpoint-mobileXL {
+        flex-direction: column;
+    }
+    img {
+        padding: 10px;
+        @include mixin.breakpoint-mobileXL {
+            padding: 20px;
+        }
+    }
+}
+
+.text {
+    padding: 10px;
+    text-align: center;
+    @include mixin.breakpoint-mobileXL {
+        text-align: justify;
+    }
+    @include mixin.breakpoint-mobileM {
+        font-size: 14px;
+    }
+}
+
+.hoursSection {
+    padding: 30px;
+    @include mixin.breakpoint-mobileL {
+        padding-bottom: 30px;
+    }
+}
+
+.hours {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    @include mixin.breakpoint-laptopM {
+        width: 40%;
+    }
+    @include mixin.breakpoint-laptopS {
+        width: 45%;
+    }
+    @include mixin.breakpoint-tabletteM {
+        width: 50%;
+    }
+    @include mixin.breakpoint-tabletteS {
+        width: 60%;
+    }
+    @include mixin.breakpoint-mobileL {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    @include mixin.breakpoint-mobileM {
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    &>div {
+        display: flex;
+        justify-content: space-between;
+        span:first-child {
+            font-weight: 700;
+        }
+    }
+}
