@@ -2,6 +2,7 @@
 
 .container {
     padding: 40px 100px;
+    padding-bottom: 218px;
     @include mixin.breakpoint-laptopS {
         padding: 40px 50px;
     }
