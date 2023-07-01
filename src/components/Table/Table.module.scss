@@ -1,0 +1,15 @@
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border: 1px solid var(--primary-color);
+}
+
+th,
+td {
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+}

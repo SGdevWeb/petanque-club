@@ -1,0 +1,83 @@
+[
+  {
+    "Club": "HOUPLINE",
+    "Date": "2/4/23",
+    "Jet du but": "7/1/23",
+    "Numéro qualif": "4",
+    "Formule": "X2 départ.",
+    "Nombre de qulifiés": "4 A + 4 B",
+    "Finale": "2/11/23"
+  },
+  {
+    "Club": "HALLUIN",
+    "Date": "2/4/23",
+    "Jet du but": "14H30",
+    "Numéro qualif": "4",
+    "Formule": "X2 départ.",
+    "Nombre de qulifiés": "",
+    "Finale": "3/19/23"
+  },
+  {
+    "Club": "ANNAPPES",
+    "Date": "2/4/23",
+    "Jet du but": "13H30",
+    "Numéro qualif": "4",
+    "Formule": "X2",
+    "Nombre de qulifiés": "4 A + 1 B",
+    "Finale": "4/1/23"
+  },
+  {
+    "Club": "LA CHAPELLE",
+    "Date": "2/5/23",
+    "Jet du but": "14H00",
+    "Numéro qualif": "4",
+    "Formule": "X2 départ.",
+    "Nombre de qulifiés": "4 A + 2 B",
+    "Finale": "3/4/23"
+  },
+  {
+    "Club": "TERTRE",
+    "Date": "2/5/23",
+    "Jet du but": "13H30",
+    "Numéro qualif": "5",
+    "Formule": "X2 Mixte",
+    "Nombre de qulifiés": "5",
+    "Finale": "2/26/23"
+  },
+  {
+    "Club": "MOUSCRON",
+    "Date": "2/5/23",
+    "Jet du but": "14H00",
+    "Numéro qualif": "4",
+    "Formule": "X2",
+    "Nombre de qulifiés": "4",
+    "Finale": "3/5/23"
+  },
+  {
+    "Club": "CROIX",
+    "Date": "2/5/23",
+    "Jet du but": "14H00",
+    "Numéro qualif": "3",
+    "Formule": "X3 départ.",
+    "Nombre de qulifiés": "6 A + 2 B",
+    "Finale": "3/12/23"
+  },
+  {
+    "Club": "DOUAIS",
+    "Date": "2/5/23",
+    "Jet du but": "10H00",
+    "Numéro qualif": "FINALE",
+    "Formule": "X3 départ. ",
+    "Nombre de qulifiés": "30 équipes ",
+    "Finale": ""
+  },
+  {
+    "Club": "AB AMANDINOISE",
+    "Date": "2/7/23",
+    "Jet du but": "14H30",
+    "Numéro qualif": "FINALE",
+    "Formule": "X2 départ. vétérans",
+    "Nombre de qulifiés": "32 équipes",
+    "Finale": ""
+  }
+]

@@ -1,126 +1,127 @@
-@use '../../assets/styles/mixin' as mixin;
+@use "../../assets/styles/mixin" as mixin;
 
 .container {
-    position: absolute;
-    bottom: 0;
-    background-color: var(--primary-color);
-    width: 100%;
-    max-width: 1400px;
-    padding: 20px;
-    padding-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    @include mixin.breakpoint-tabletteM {
-        padding: 10px;
-    }
+  position: absolute;
+  bottom: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 20px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  @include mixin.breakpoint-tabletteM {
+    padding: 10px;
+  }
 }
 
 .contactDetails {
-    padding: 20px 0;
-    font-size: 18px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  padding: 20px 0;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include mixin.breakpoint-tabletteM {
+    flex-direction: column;
+    width: auto;
+    padding: 0;
+  }
+  i {
+    margin-right: 20px;
     @include mixin.breakpoint-tabletteM {
-        flex-direction: column;
-        width: auto;
-        padding: 0;
+      display: none;
+    }
+  }
+  .address {
+    text-align: center;
+    @include mixin.breakpoint-tabletteM {
+      border-bottom: 1px solid white;
     }
     i {
-        margin-right: 20px;
-        @include mixin.breakpoint-tabletteM {
-            display: none;
-        }
+      font-size: 40px;
     }
-    .address {
-        text-align: center;
-        @include mixin.breakpoint-tabletteM {
-            border-bottom: 1px solid white;
-        }
-        i {
-            font-size: 40px;
-        }
+  }
+  .phone {
+    text-align: center;
+    border-left: 1px solid white;
+    @include mixin.breakpoint-tabletteM {
+      border-left: none;
+      border-bottom: 1px solid white;
     }
-    .phone {
-        text-align: center;
-        border-left: 1px solid white;
-        @include mixin.breakpoint-tabletteM {
-            border-left: none;
-            border-bottom: 1px solid white;
-        }
-        i {
-            font-size: 40px;
-        }
+    i {
+      font-size: 40px;
     }
-    .mail {
-        text-align: center;
-        border-left: 1px solid white;
-        @include mixin.breakpoint-tabletteM {
-            border-left: none;
-        }
-        i {
-            font-size: 40px;
-        }
+  }
+  .mail {
+    text-align: center;
+    border-left: 1px solid white;
+    @include mixin.breakpoint-tabletteM {
+      border-left: none;
     }
-    .content {
-        @include mixin.breakpoint-tabletteM {
-            padding: 5px;
-        }
+    i {
+      font-size: 40px;
     }
+  }
+  .content {
+    @include mixin.breakpoint-tabletteM {
+      padding: 5px;
+    }
+  }
 }
 
-.address, .phone, .mail {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    .title {
-        font-size: 20px;
-        text-transform: uppercase;
-        @include mixin.breakpoint-tabletteM {
-            padding: 5px;
-        }
-        @include mixin.breakpoint-tabletteS {
-            font-size: 18px;
-        }
-        @include mixin.breakpoint-mobileM {
-            font-size: 14px;
-        }
+.address,
+.phone,
+.mail {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  .title {
+    font-size: 20px;
+    text-transform: uppercase;
+    @include mixin.breakpoint-tabletteM {
+      padding: 5px;
     }
-    .text {
-        color: lightgray;
-        font-size: 16px;
-        @include mixin.breakpoint-tabletteS {
-            font-size: 14px;
-        }
-        @include mixin.breakpoint-mobileM {
-            font-size: 12px;
-        }
+    @include mixin.breakpoint-tabletteS {
+      font-size: 18px;
     }
+    @include mixin.breakpoint-mobileM {
+      font-size: 14px;
+    }
+  }
+  .text {
+    color: lightgray;
+    font-size: 16px;
+    @include mixin.breakpoint-tabletteS {
+      font-size: 14px;
+    }
+    @include mixin.breakpoint-mobileM {
+      font-size: 12px;
+    }
+  }
 }
 
 .author {
-    margin-top: 30px;
-    color: lightgray;
-    text-align: center;
-    display: flex;
-    @include mixin.breakpoint-tabletteS {
-        font-size: 14px;
-    }
-    @include mixin.breakpoint-mobileL {
-        font-size: 12px;
-    }
-    @include mixin.breakpoint-mobileM {
-        flex-direction: column;
-    }
-    i {
-        padding-right: 2px;
-    }
-    a {
-        margin-left: 5px;
-    }
+  margin-top: 30px;
+  color: lightgray;
+  text-align: center;
+  display: flex;
+  @include mixin.breakpoint-tabletteS {
+    font-size: 14px;
+  }
+  @include mixin.breakpoint-mobileL {
+    font-size: 12px;
+  }
+  @include mixin.breakpoint-mobileM {
+    flex-direction: column;
+  }
+  i {
+    padding-right: 2px;
+  }
+  a {
+    margin-left: 5px;
+  }
 }

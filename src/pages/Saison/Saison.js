@@ -1,12 +1,12 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import styles from "./Saison.module.scss";
+import { Outlet } from "react-router-dom";
 
 function Saison() {
   return (
-    <div>
-        <Outlet />
+    <div className={styles.container}>
+      <Outlet />
     </div>
-  )
+  );
 }
 
-export default Saison
+export default Saison;

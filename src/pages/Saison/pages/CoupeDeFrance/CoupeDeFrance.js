@@ -24,11 +24,11 @@ function CoupeDeFrance() {
           <div className={styles.tirage}>
             <img src={tirage} alt="Tirage 1er tour coupe de france" />
           </div>
-          <p>
+          <p className={styles.paragraphe}>
             Ces rencontres doivent se jouer en boulodrome couvert et le club qui
             reçoit doit s'octroyer les services d'un arbitre
           </p>
-          <p>
+          <p className={styles.paragraphe}>
             Les 28 équipes qualifiées seront réparties en 7 groupes pour les
             2ème et 3ème tours qui se joueront le samedi 6 mai à partir de 8h30.
             Les 28 équipes éliminées et les 2 perdants des cadrages intègreront
