@@ -1,15 +1,46 @@
+@use "../../assets/styles/mixin" as mixin;
+
 .container {
   padding: 10px;
   display: flex;
   justify-content: center;
 }
 
-table {
-  border: 1px solid var(--primary-color);
+thead tr {
+  text-align: center;
 }
 
 th,
 td {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color) !important;
   padding: 10px;
+}
+
+thead tr {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@include mixin.breakpoint-tabletteS {
+  table {
+    width: 100%;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+  td {
+    display: block;
+    text-align: right;
+    margin-top: -1px;
+    background-color: white;
+  }
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
 }

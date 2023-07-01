@@ -27,7 +27,9 @@ function Table({ classname }) {
           {tableData.map((item, index) => (
             <tr key={index}>
               {tableHeaders.map((header) => (
-                <td key={header}>{item[header]}</td>
+                <td data-label={header} key={header}>
+                  {item[header]}
+                </td>
               ))}
             </tr>
           ))}
